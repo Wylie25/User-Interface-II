@@ -50,6 +50,9 @@ table {
 
 
 
+
+
+
 h1{
     text-align: center;
     text-decoration: underline;
@@ -62,6 +65,7 @@ h1{
 .nav{
     display: inline-flex;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
     width: 15%;
@@ -69,11 +73,8 @@ h1{
     color: black;
     padding: 20px;
     border-radius: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: center;
     background: #00CED1;
+    margin: auto;
 }
 
  a:hover{
@@ -96,23 +97,21 @@ h2{
 }
 
 p{
-    text-align: center;
+    
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.2rem;
     padding: 20px;
     display: flex;
-    align-content: center;
-    margin-left: 25%;
-    margin-right: 25%;
+    align-items: center;
+    justify-content: center;
+   
 }
 
 .main-img{
     display: flex;
-    height: 700px;
     justify-content: space-around;
     background:#4682B4;
     margin: 2rem;
-    border: 2px solid black;
 }
 
 img{
@@ -141,4 +140,61 @@ div{
 .low{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-top: 2.5rem;  
+}
+
+/* @media for 500px */
+@media (max-width:500px){
+
+    header{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nav{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        font-size: 40px;
+    }
+
+  
+
+    div{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        margin: 1rem;
+        justify-content: center;
+        align-content: center;
+    }
+
+    
+}
+
+/* @media for 800px */
+@media (max-width:800px){
+    
+    header{
+        display: flex;
+        flex-direction: column;
+      }
+  
+      .nav{
+          display: flex;
+          flex-direction: column;
+          width: 80%;
+          font-size: 40px;
+      }
+  
+  
+      div{
+          display: flex;
+          flex-direction: column;
+          padding: 2rem;
+          margin: 1rem;
+          justify-content: center;
+          align-content: center;
+          align-items: center;
+      }
+
 }
