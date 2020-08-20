@@ -111,7 +111,7 @@ p{
     display: flex;
     justify-content: space-around;
     background:#4682B4;
-    margin: 2rem;
+    width: 100%;
 }
 
 img{
@@ -133,13 +133,15 @@ footer{
 }
 
 div{
-    display: inline-flex;
+    display: flex;
     align-content: center;
+    
 }
 
 .low{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-top: 2.5rem;  
+    margin-top: 2.5rem; 
+    width: 20%; 
 }
 
 /* @media for 500px */
@@ -168,6 +170,11 @@ div{
         align-content: center;
     }
 
+    .low-img{
+        align-items: center;
+        justify-content: center;
+    }
+
     
 }
 
@@ -187,14 +194,27 @@ div{
       }
   
   
-      div{
+      .img{
           display: flex;
           flex-direction: column;
+          flex-wrap: nowrap;
           padding: 2rem;
           margin: 1rem;
           justify-content: center;
           align-content: center;
-          align-items: center;
       }
+
+      .low-img{
+        display: flex;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .low{
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    
 
 }
